@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+</head>
+<body>
+    <!-- En-tête et Navbar -->
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Home -->
+    <section id="home">
+        <h2>Bienvenue</h2>
+        <p>Bienvenue sur mon portfolio. Découvrez mes travaux, mon expérience et contactez-moi pour discuter de nouveaux projets.</p>
+    </section>
+
+    <!-- Section About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Je suis un développeur web passionné par la création de sites fonctionnels et esthétiques.</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Section Work -->
+    <section id="work">
+        <h2>My Work</h2>
+        <p>Voici un aperçu de mes projets :</p>
+        <table border="1">
+            <tr>
+                <th>Projet</th>
+                <th>Description</th>
+                <th>Lien</th>
+            </tr>
+            <tr>
+                <td>Site E-commerce</td>
+                <td>Un site pour acheter des produits en ligne</td>
+                <td><a href="#">Voir le projet</a></td>
+            </tr>
+            <tr>
+                <td>Portfolio</td>
+                <td>Mon propre portfolio</td>
+                <td><a href="#">Voir le projet</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section Resume -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas la lecture d'audio.
+        </audio>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        <p>Retrouvez-moi sur <a href="#">LinkedIn</a> et <a href="#">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
